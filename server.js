@@ -10,7 +10,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(morgan('dev'))
 require("./app/routing/apiRoutes.js")(app);
-require("app/routing/htmlRoutes.js")(app);
+console.log("Testing");
+require("./app/routing/htmlRoutes.js")(app);
 
 
 
