@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tables Page</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="text-center"><span class="glyphicon glyphicon-fire"></span> Friend Finder</h1>
+      <hr>
+      <h2 class="text-center">Please answer following questions:</h2>
+      <br>  
+    </div>
+
+    <form class="form-inline" method="post">
+            <h3> Name:</h3>
+            <input type="text" class="form-control" id="name" placeholder="Name">
+            <hr>
+            <h3> Photo URL (Required):</h3>
+            <input type="text" class="form-control" id="photoURL" placeholder="Photo URL">
+            <hr>
+         
+      
+
+      <label class="my-1 mr-2" for="ques1">Q1) How often do you go to the movies in  a month?</label>
+        <select class="custom-select my-1 mr-sm-2" id="ques1">
+          <option selected>Choose...</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+
+        <hr>
+
+        <label class="my-1 mr-2" id="q2"for="ques2">Q2) How often do you go to the park in  a month?</label>
+        <select class="custom-select my-1 mr-sm-2" id="ques2">
+          <option selected>Choose...</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+
+        <hr>
+
+        <label class="my-1 mr-2" id="q3" for="ques3">Q3) is sleep very important to you?</label>
+        <select class="custom-select my-1 mr-sm-2" id="ques3">
+          <option selected>Choose...</option>
+          <option value="1">1 strongly disagree</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 strongly agree</option>
+        </select>
+      <hr>
+
+      <label class="my-1 mr-2" id="q4" for="ques4">Q4)are you good at keeping secrets?</label>
+      <select class="custom-select my-1 mr-sm-2" id="ques4">
+        <option selected>Choose...</option>
+        <option value="1">1 strongly disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 strongly agree</option>
+      </select>
+    <hr>
+
+    <label class="my-1 mr-2" id="q5" for="ques5">Q5)You enjoy a good sense of humor?</label>
+    <select class="custom-select my-1 mr-sm-2" id="ques5">
+      <option selected>Choose...</option>
+      <option value="1">1 strongly disagree</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 strongly agree</option>
+    </select>
+  <hr>
+    <label class="my-1 mr-2" id="q6" for="ques6">Q6) Do you like sports?</label>
+    <select class="custom-select my-1 mr-sm-2" id="ques6">
+      <option selected>Choose...</option>
+      <option value="1">1 strongly disagree</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 strongly agree</option>
+    </select>
+  <hr>
+    <label class="my-1 mr-2" id="q7" for="ques7">Q7) Do you like action movies?</label>
+    <select class="custom-select my-1 mr-sm-2" id="ques7">
+      <option selected>Choose...</option>
+      <option value="1">1 strongly disagree</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 strongly agree</option>
+    </select>
+  <hr>
+    <label class="my-1 mr-2" id="q8" for="ques8">Q8) Are you a reliable as a friend?</label>
+    <select class="custom-select my-1 mr-sm-2" id="ques8">
+      <option selected>Choose...</option>
+      <option value="1">1 strongly disagree</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 strongly agree</option>
+    </select>
+  <hr>
+    <label class="my-1 mr-2" id="q9" for="ques9">Q9) Do you like big crowds?</label>
+    <select class="custom-select my-1 mr-sm-2" id="ques9">
+      <option selected>Choose...</option>
+      <option value="1">1 strongly disagree</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 strongly agree</option>
+    </select>
+  <hr>
+    <label class="my-1 mr-2" id="q10" for="ques10">Q10) Do you like to be active?</label>
+    <select class="custom-select my-1 mr-sm-2" id="ques10">
+      <option selected>Choose...</option>
+      <option value="1">1 strongly disagree</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 strongly agree</option>
+    </select>
+  <hr>
+
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary"  id="submitBttn">
+    submit
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="resultsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" id="content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <span id="friendSuggestion"></span>
+          <span id="friendPhoto"></span>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-primary" >Sweet, I will contact them</button> -->
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Sweet, I will contact them</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+        <!-- <button type="submit" class="btn btn-primary my-1" id="submitBttn">Submit</button> -->
+      </form>
+
+    <footer class="footer">
+        <div class="container">
+          <p><a href="/api/friends">API friends</a> | <a href="https://github.com/OzairK/friendFinder">GitHub Repo</a></p>
+        </div>
+      </footer>
+
+  </div>
+
+</body>
+
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS LOADED FROM OUR SERVER -->
+<script type="text/javascript">
+
+$("#submitBttn").on("click",function(){
+  event.preventDefault();
+  var newUser = {};
+  newUser.name= $("#name").val().trim();
+  newUser.photo = $("#photoURL").val().trim();
+  newUser.scores =[];
+  for(var i = 1; i < 11; i++){
+    var ques = "#ques" + i;
+    newUser.scores.push(parseInt($(ques).val()));
+  }
+  console.log("button has been clicked")
+  $.post("/api/friends", newUser, function(match){
+    //alert("hi your match is" + match);
+    $("#friendSuggestion").text(match[0]);
+    $("#friendPhoto").html('<br><img src ="' + match[1]+ '"width="350">')
+    // $("#friendPhoto").html("<img src="+ )
+    console.log(match[1]);
+    $("#resultsModal").modal();
+  })
+})
+
+
+
+   </script>
+</html>
