@@ -1,30 +1,29 @@
-// ===============================================================================
-// LOAD DATA
-// We are linking our routes to a series of "data" sources.
-// These data sources hold arrays of information on table-data, waitinglist, etc.
-// ===============================================================================
-
+// all friends data is stored in the following file
 var friendsData = require("../data/friends");
 
 
 
 // ===============================================================================
-// ROUTING
+// ROUTING all api calls
 // ===============================================================================
 
 module.exports = function(app) {
+  //returns json formated array of friends.js file
   app.get("/api/friends", function(req, res) {
     res.json(friendsData);
   });
 
-
+//finds a match for a friend based on most similar interst, and returns
+//the best match
   app.post("/api/friends", function(req,res){
     var newUser = req.body;
     res.json(findBuddy(newUser));
-    addUser(newUser)   
+    addUser(newUser)                                      //new user is added after match is provided for them
   })
 };
 
+//each of the 10 answers are compared to other users, the one with the least difference
+//is matched as the new users buddy
 var findBuddy = function(newUser){
   var bestFriend = "";
   var scoreToBeat = 100;
@@ -46,6 +45,7 @@ var findBuddy = function(newUser){
 
 }
 
+//formats the new user and stores it in the array of current users
 var addUser = function(newUser){
   var newUserToAdd ={};
   newUserToAdd.name= newUser.name;

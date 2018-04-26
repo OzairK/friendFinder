@@ -178,8 +178,6 @@
 
 </body>
 
-
-<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS LOADED FROM OUR SERVER -->
 <script type="text/javascript">
 
 $("#submitBttn").on("click",function(){
@@ -192,13 +190,11 @@ $("#submitBttn").on("click",function(){
     var ques = "#ques" + i;
     newUser.scores.push(parseInt($(ques).val()));
   }
-  console.log("button has been clicked")
+  // new user is sent to api call
+  // match the array is returned with the best friend name, and photo url
   $.post("/api/friends", newUser, function(match){
-    //alert("hi your match is" + match);
-    $("#friendSuggestion").text(match[0]);
+    $("#friendSuggestion").text(match[0]);                                  
     $("#friendPhoto").html('<br><img src ="' + match[1]+ '"width="350">')
-    // $("#friendPhoto").html("<img src="+ )
-    console.log(match[1]);
     $("#resultsModal").modal();
   })
 })
